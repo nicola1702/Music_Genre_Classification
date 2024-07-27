@@ -1,0 +1,28 @@
+Reloading Tuner from hyperparameter_tuning/music_genre_classification/tuner0.json
+Search space summary
+Default search space size: 5
+filters1 (Choice)
+{'default': 32, 'conditions': [], 'values': [32, 64], 'ordered': True}
+filters2 (Choice)
+{'default': 64, 'conditions': [], 'values': [64, 128], 'ordered': True}
+filters3 (Choice)
+{'default': 128, 'conditions': [], 'values': [128, 256], 'ordered': True}
+filters4 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+filters5 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+Reloading Tuner from hyperparameter_tuning/music_genre_classification/tuner0.json
+Search space summary
+Default search space size: 5
+filters1 (Choice)
+{'default': 32, 'conditions': [], 'values': [32, 64], 'ordered': True}
+filters2 (Choice)
+{'default': 64, 'conditions': [], 'values': [64, 128], 'ordered': True}
+filters3 (Choice)
+{'default': 128, 'conditions': [], 'values': [128, 256], 'ordered': True}
+filters4 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+filters5 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras/src/saving/saving_lib.py:415: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables.
+  saveable.load_own_variables(weights_store.get(inner_path))

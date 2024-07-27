@@ -1,0 +1,20 @@
+Reloading Tuner from hyperparameter_tuning/music_genre_classification/tuner0.json
+Search space summary
+Default search space size: 5
+filters1 (Choice)
+{'default': 32, 'conditions': [], 'values': [32, 64], 'ordered': True}
+filters2 (Choice)
+{'default': 64, 'conditions': [], 'values': [64, 128], 'ordered': True}
+filters3 (Choice)
+{'default': 128, 'conditions': [], 'values': [128, 256], 'ordered': True}
+filters4 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+filters5 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+Search: Running Trial #3
+Value             |Best Value So Far |Hyperparameter
+64                |32                |filters1
+128               |64                |filters2
+256               |128               |filters3
+256               |512               |filters4
+512               |256               |filters5

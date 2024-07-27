@@ -1,0 +1,43 @@
+Reloading Tuner from hyperparameter_tuning/music_genre_classification/tuner0.json
+Search space summary
+Default search space size: 5
+filters1 (Choice)
+{'default': 32, 'conditions': [], 'values': [32, 64], 'ordered': True}
+filters2 (Choice)
+{'default': 64, 'conditions': [], 'values': [64, 128], 'ordered': True}
+filters3 (Choice)
+{'default': 128, 'conditions': [], 'values': [128, 256], 'ordered': True}
+filters4 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+filters5 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+Search: Running Trial #3
+Value             |Best Value So Far |Hyperparameter
+64                |32                |filters1
+128               |64                |filters2
+256               |128               |filters3
+256               |512               |filters4
+512               |256               |filters5
+Traceback (most recent call last):
+  File "/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras_tuner/src/engine/base_tuner.py", line 274, in _try_run_and_update_trial
+    self._run_and_update_trial(trial, *fit_args, **fit_kwargs)
+  File "/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras_tuner/src/engine/base_tuner.py", line 239, in _run_and_update_trial
+    results = self.run_trial(trial, *fit_args, **fit_kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras_tuner/src/engine/tuner.py", line 314, in run_trial
+    obj_value = self._build_and_fit_model(trial, *args, **copied_kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras_tuner/src/engine/tuner.py", line 233, in _build_and_fit_model
+    results = self.hypermodel.fit(hp, model, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras_tuner/src/engine/hypermodel.py", line 149, in fit
+    return model.fit(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/var/folders/tt/p1wsnysn3c32c1y40_r7blhh0000gn/T/ipykernel_63868/163310850.py", line 3, in set_model
+    self.model = model
+    ^^^^^^^^^^
+AttributeError: property 'model' of 'CustomWandbCallback' object has no setter
+/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras/src/layers/convolutional/base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)

@@ -1,0 +1,4 @@
+data/
+venv/
+src/kaggle.json
+confusion.png

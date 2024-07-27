@@ -1,0 +1,20 @@
+Reloading Tuner from hyperparameter_tuning/music_genre_classification/tuner0.json
+Search space summary
+Default search space size: 5
+filters1 (Choice)
+{'default': 32, 'conditions': [], 'values': [32, 64], 'ordered': True}
+filters2 (Choice)
+{'default': 64, 'conditions': [], 'values': [64, 128], 'ordered': True}
+filters3 (Choice)
+{'default': 128, 'conditions': [], 'values': [128, 256], 'ordered': True}
+filters4 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+filters5 (Choice)
+{'default': 256, 'conditions': [], 'values': [256, 512], 'ordered': True}
+[1m5/5[22m [32m━━━━━━━━━━━━━━━━━━━━[39m [1m1s[22m 123ms/step
+[1m2/5[22m [32m━━━━━━━━[37m━━━━━━━━━━━━[39m [1m0s[22m 156ms/step - accuracy: 0.4922 - loss: 1.5191
+/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras/src/saving/saving_lib.py:415: UserWarning: Skipping variable loading for optimizer 'adam', because it has 2 variables whereas the saved optimizer has 26 variables.
+[1m5/5[22m [32m━━━━━━━━━━━━━━━━━━━━[39m [1m1s[22m 120ms/step - accuracy: 0.4955 - loss: 1.5142
+Test accuracy: 0.5033556818962097
+/Users/nicola/Documents/GitHub/Music-Genre-Classification---GTZAN/venv/lib/python3.11/site-packages/keras/src/layers/convolutional/base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
